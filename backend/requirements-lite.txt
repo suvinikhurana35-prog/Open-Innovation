@@ -1,0 +1,20 @@
+# Lightweight requirements for free-tier deployment (Render/Railway).
+# Excludes chromadb, sentence-transformers, torch, and OCR/PDF extras — those
+# are only needed for the RAG fallback, which is disabled in lite mode
+# (set DISABLE_RAG=1). Every scheme is served from backend/data/kb/*.md.
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-dotenv>=1.0.1
+python-multipart>=0.0.9
+pydantic>=2.7.1
+pydantic-settings>=2.2.1
+
+# LLM provider (Anthropic)
+anthropic>=0.28.0
+
+# HTTP client (transliterate proxy)
+httpx>=0.27.0
+
+# Text-to-speech fallback used by the voice route
+gTTS>=2.5.1

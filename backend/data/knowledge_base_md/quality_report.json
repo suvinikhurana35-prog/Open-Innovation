@@ -1,0 +1,104 @@
+{
+  "average": 98.1,
+  "schemes": [
+    {
+      "scheme": "atal_pension_yojna.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "cbse_merit_scholarship_scheme_for_single_girl_child.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "fasal_bima_yojna.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "junior_research_fellowship_in_engineering_and_technology.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "kisan_credit_card.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "kissan_samman_nidhi.md",
+      "score": 93,
+      "gaps": [
+        "Application Process (thin)"
+      ]
+    },
+    {
+      "scheme": "national_scholarship_for_post_graduate_studies.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "national_talent_scholarship_undergraduate.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "pm_kaushal_vikas_yojna.md",
+      "score": 86,
+      "gaps": [
+        "Required Documents (thin)",
+        "Application Process (thin)"
+      ]
+    },
+    {
+      "scheme": "post_graduate_scholarship_for_single_girl_child.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "pradhan_mantri_garib_kalyan_anna_yojna.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "pradhan_mantri_jan_dhan_dhan_yojna.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "pradhan_mantri_jeevan_jyoti_bima_yojna.md",
+      "score": 93,
+      "gaps": [
+        "Application Process (thin)"
+      ]
+    },
+    {
+      "scheme": "pradhan_mantri_mudra_yojna.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "pradhan_mantri_viksit_bharat_rozgar_yojna.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "skill_loan_scheme.md",
+      "score": 100,
+      "gaps": []
+    },
+    {
+      "scheme": "stand_up_india_scheme_for_buisness.md",
+      "score": 93,
+      "gaps": [
+        "Application Process (thin)"
+      ]
+    },
+    {
+      "scheme": "suraksha_bina_yojna.md",
+      "score": 100,
+      "gaps": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-dotenv==1.0.1
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# LLM providers
+anthropic>=0.28.0
+openai>=1.30.0
+
+# RAG / vector store
+chromadb==0.5.0
+langchain==0.2.1
+langchain-community==0.2.1
+langchain-text-splitters==0.2.1
+sentence-transformers==3.0.0
+
+# PDF extraction (offline KB build only; no OCR — OCR removed)
+pypdf==4.2.0
+pdfplumber==0.11.1
+
+# HTTP client (for transliterate proxy)
+httpx>=0.27.0
+
+# Utilities
+numpy<2

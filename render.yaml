@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: janniti-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements-lite.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: DISABLE_RAG          # lite mode: skip the 450MB ML model (free tier)
+        value: "1"
+      - key: AUTO_INGEST_ON_START
+        value: "0"
+      - key: LLM_PROVIDER
+        value: anthropic
+      - key: ANTHROPIC_MODEL
+        value: claude-haiku-4-5-20251001
+      - key: CORS_ORIGINS
+        value: "*"                # tighten to your Vercel URL after it works
+      - key: ANTHROPIC_API_KEY
+        sync: false              # set manually in the Render dashboard (secret)
