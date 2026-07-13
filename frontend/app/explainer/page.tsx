@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { usePersistent } from '@/lib/contexts/AppStateContext'
 import { Button } from '@/components/ui/Button'
 import { Card, CardContent, CardTitle } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
@@ -56,15 +57,15 @@ function SeverityIcon({ severity }: { severity: string }) {
 
 export default function ExplainerPage() {
   const { lang, t } = useLang()
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = usePersistent<string>('explainer:query', '')
   const [loading, setLoading] = useState(false)
   const [showELI5, setShowELI5] = useState(false)
   const [showConditions, setShowConditions] = useState(false)
-  const [activeTab, setActiveTab] = useState<'explain' | 'eli5' | 'conditions'>('explain')
+  const [activeTab, setActiveTab] = usePersistent<'explain' | 'eli5' | 'conditions'>('explainer:tab', 'explain')
 
-  const [result, setResult] = useState<SchemeResult | null>(null)
-  const [eli5, setEli5] = useState<ELI5Result | null>(null)
-  const [conditions, setConditions] = useState<{ conditions: Condition[], summary: string } | null>(null)
+  const [result, setResult] = usePersistent<SchemeResult | null>('explainer:result', null)
+  const [eli5, setEli5] = usePersistent<ELI5Result | null>('explainer:eli5', null)
+  const [conditions, setConditions] = usePersistent<{ conditions: Condition[], summary: string } | null>('explainer:conditions', null)
   const [error, setError] = useState('')
 
   const handleSearch = async (override?: string) => {

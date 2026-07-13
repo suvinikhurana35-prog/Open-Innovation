@@ -4,9 +4,10 @@ import { useState, useRef, useEffect } from 'react'
 import { Button } from '@/components/ui/Button'
 import { TransliterateInput } from '@/components/ui/TransliterateInput'
 import { VoiceButton } from '@/components/ui/VoiceButton'
-import { chatWithAI } from '@/lib/api'
+import { chatWithAI, translateTexts } from '@/lib/api'
 import { useI18n } from '@/lib/i18n'
 import { useAuth } from '@/lib/contexts/AuthContext'
+import { usePersistent } from '@/lib/contexts/AppStateContext'
 import { trackChat } from '@/lib/services/activity'
 import { Send, Loader2, Bot, User, Shield, AlertTriangle, Volume2 } from 'lucide-react'
 import { cn, getConfidenceColor } from '@/lib/utils'
@@ -62,11 +63,12 @@ export default function ChatbotPage() {
   const SUGGESTED_QUESTIONS = [
     t('chat_q1'), t('chat_q2'), t('chat_q3'), t('chat_q4'), t('chat_q5'), t('chat_q6'),
   ]
-  const [messages, setMessages] = useState<Message[]>([
+  const [messages, setMessages] = usePersistent<Message[]>('chat:messages', [
     { role: 'assistant', content: greeting },
   ])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [translating, setTranslating] = useState(false)
   const [speakingIndex, setSpeakingIndex] = useState<number | null>(null)
   const [voiceStatus, setVoiceStatus] = useState<'idle' | 'listening' | 'processing'>('idle')
   const [ttsVoices, setTtsVoices] = useState<SpeechSynthesisVoice[]>([])
@@ -92,10 +94,40 @@ export default function ChatbotPage() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }, [messages])
 
-  // refresh the greeting when the user switches language or signs in (before any chat starts)
+  // Keep a live ref to messages so the language-change effect can read the
+  // current conversation without re-subscribing on every message.
+  const messagesRef = useRef<Message[]>(messages)
+  useEffect(() => { messagesRef.current = messages }, [messages])
+
+  const prevLangRef = useRef(lang)
   useEffect(() => {
-    setMessages((m) => (m.length === 1 && m[0].role === 'assistant'
-      ? [{ role: 'assistant', content: greeting }] : m))
+    const langChanged = prevLangRef.current !== lang
+    prevLangRef.current = lang
+    const current = messagesRef.current
+
+    // Opening greeting only -> always keep it fresh (name + language), no API.
+    if (current.length <= 1) {
+      setMessages([{ role: 'assistant', content: greeting }])
+      return
+    }
+
+    // A real conversation -> re-translate only when the language actually changed.
+    if (!langChanged) return
+    let cancelled = false
+    setTranslating(true)
+    ;(async () => {
+      try {
+        const res: any = await translateTexts(current.map((m) => m.content), lang)
+        const out: string[] = res?.texts || res?.data?.texts || current.map((m) => m.content)
+        if (cancelled) return
+        setMessages(current.map((m, i) => ({ ...m, content: out[i] ?? m.content })))
+      } catch (e) {
+        console.error('Chat re-translation failed:', e)
+      } finally {
+        if (!cancelled) setTranslating(false)
+      }
+    })()
+    return () => { cancelled = true }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang, firstName])
 
@@ -251,6 +283,12 @@ export default function ChatbotPage() {
               <div className="bg-gray-100 dark:bg-gray-700 rounded-2xl rounded-bl-md px-4 py-3">
                 <Loader2 className="w-5 h-5 animate-spin text-primary-600" />
               </div>
+            </div>
+          )}
+          {translating && (
+            <div className="flex items-center justify-center gap-2 py-2 text-sm text-primary-600 dark:text-primary-400">
+              <Loader2 className="w-4 h-4 animate-spin" />
+              <span>{t('chat_translating') || 'Translating conversation…'}</span>
             </div>
           )}
           <div ref={messagesEndRef} />

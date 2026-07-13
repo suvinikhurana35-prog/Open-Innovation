@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { usePersistent } from '@/lib/contexts/AppStateContext'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Card, CardContent, CardTitle } from '@/components/ui/Card'
@@ -12,14 +13,14 @@ import { Loader2, ArrowRightLeft, CheckCircle2, Info, Sparkles } from 'lucide-re
 
 export default function ComparePage() {
   const { lang, t } = useLang()
-  const [scheme1, setScheme1] = useState('')
-  const [scheme2, setScheme2] = useState('')
+  const [scheme1, setScheme1] = usePersistent<string>('compare:scheme1', '')
+  const [scheme2, setScheme2] = usePersistent<string>('compare:scheme2', '')
   const [loading, setLoading] = useState(false)
-  const [result, setResult] = useState<any>(null)
+  const [result, setResult] = usePersistent<any>('compare:result', null)
   const [error, setError] = useState('')
   const [profile, setProfile] = useState<Record<string, string>>({})
   const [recLoading, setRecLoading] = useState(false)
-  const [rec, setRec] = useState<any>(null)
+  const [rec, setRec] = usePersistent<any>('compare:rec', null)
 
   const handleRecommend = async () => {
     if (!result) return

@@ -33,6 +33,13 @@ export async function searchSchemes(q: string) {
 
 export type ChatTurn = { role: 'user' | 'assistant'; content: string }
 
+export async function translateTexts(texts: string[], language: string) {
+  return apiFetch('/api/chat/translate', {
+    method: 'POST',
+    body: JSON.stringify({ texts, language }),
+  })
+}
+
 export async function chatWithAI(
   message: string,
   language: string = 'en',

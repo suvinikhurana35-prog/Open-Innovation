@@ -257,3 +257,138 @@ systems. It provides a within-study grounded-vs-ungrounded comparison on your
 own corpus plus the system metrics above. These are real, reproducible, and
 defensible; report them as system results and grounding ablation, and keep the
 external-benchmark comparison as stated future work (as the paper already does).
+
+---
+
+# Update 6 — Native-script chatbot matching (Hindi/Bengali/Tamil)
+
+Fixes the chatbot returning the "I don't have that scheme … here are the 18"
+fallback when a covered scheme is named in a non-English script (e.g. asking
+about "PM मुद्रा योजना" in Hindi returned the fallback instead of MUDRA's answer).
+
+- `services/kb_service.py`:
+  - `match()` now also recognises scheme names written in Hindi/Bengali/Tamil.
+    It builds a native-script alias index from the pre-translated scheme titles
+    (unique tokens only) plus a curated `_NATIVE_ALIASES_EXTRA` table covering
+    brand words some caches keep in Latin (e.g. MUDRA -> मुद्रा/মুদ্রা/முத்ரா).
+  - `scheme_names(lang)` returns titles in the selected language (from the
+    translation cache), so the fallback list is no longer a mix of English and
+    translated names.
+- `services/ai_service.py`: the chatbot fallback uses `scheme_names(lang)` and
+  only translates the two framing lines, so the covered-scheme list renders
+  consistently in Hindi/Bengali/Tamil.
+
+Net effect: naming any of the 18 schemes in any supported language resolves to a
+grounded, point-by-point answer (no hallucination), rendered in that language.
+The suggested-question chips already reference only covered schemes.
+
+---
+
+# Update 7 — Login gate, persistent tabs, chat re-translation
+
+Three UI/UX fixes requested from the screenshots.
+
+## 1. Chat re-renders in the selected language on switch
+- Backend: new `POST /api/chat/translate` + `ai_service.translate_texts()` which
+  translates arbitrary text into ANY target language (English included, unlike
+  `_translate_strings`).
+- `app/chatbot/page.tsx`: when the user switches language, the ENTIRE previous
+  conversation (their questions and the bot's answers) is re-rendered in the new
+  language, with a "Translating…" indicator. The opening greeting swaps
+  instantly (no API) and now also refreshes with the user's name on login.
+
+## 2. Switching tabs no longer wipes results
+- New `lib/contexts/AppStateContext.tsx` with `usePersistent(key, initial)`,
+  provided in the root layout so it never unmounts.
+- `chatbot`, `explainer`, and `compare` now keep their messages / query / tab /
+  results / selections in this store, so navigating between Explainer, Compare
+  and AI Chat (or bouncing to Home by mistake) preserves everything for the
+  session.
+
+## 3. Login required, prominent login button
+- New `components/AuthGate.tsx`: feature routes (`/explainer`, `/compare`,
+  `/chatbot`, `/profile`) require sign-in; `/`, `/login`, `/register` are public.
+  Unauthenticated visitors to a feature see a sign-in prompt.
+- `components/Navbar.tsx`: a prominent amber→orange **Login** button sits top-right
+  (stands out from the UI); when signed in it becomes a bordered Logout button
+  showing the user's first name.
+- i18n keys added (nav_login/logout/register, auth_required_*, chat_translating)
+  in English/Hindi/Bengali/Tamil.
+
+### Files changed (to copy into your repo)
+Backend: `services/ai_service.py`, `routers/chat.py`
+Frontend (new): `lib/contexts/AppStateContext.tsx`, `components/AuthGate.tsx`
+Frontend (edited): `app/providers.tsx`, `components/Navbar.tsx`, `lib/api.ts`,
+`lib/i18n.tsx`, `app/chatbot/page.tsx`, `app/explainer/page.tsx`,
+`app/compare/page.tsx`
+
+---
+
+# Round 2 — chatbot was still answering in English / "I don't have that scheme"
+
+Root cause: the previous round's translate-on-language-switch and login/tab-persistence
+code was correct, but this is a **different repo copy** (the one actually being run
+locally, without any of Round 1's fixes) — that's why the screenshots still showed the
+old broken behaviour. This round starts from that real repo and adds Round 1's fixes
+back in, **plus** fixes the deeper root cause of the chatbot problem itself.
+
+## 1. The actual reason the chatbot fell back to English / "I don't have that scheme"
+`backend/services/kb_service.py`, `backend/services/ai_service.py`
+
+Two separate bugs were stacked on top of each other:
+
+**a) Scheme matching was fine, but the answer text wasn't.** `chat_lines()` looked for
+translated scheme files in `data/kb_hi/`, `data/kb_bn/`, `data/kb_ta/` — folders that
+don't exist in this project. So for every non-English question it silently fell through
+to live-LLM translation of the English KB text. If the LLM key isn't configured/reachable
+(the case in your local run), that translation call fails and the *original English* is
+returned — which is exactly what the screenshots show.
+
+**Fix:** `chat_lines()` now reads the **same translation files the Explainer already
+uses** (`data/translations/<slug>__<lang>.json` — human-reviewed, already built for all
+18 schemes × hi/bn/ta). This is instant, deterministic, and needs **no LLM call at all**,
+so it can never silently fall back to English. The static wrapper text ("Who is
+eligible:", "How to apply:", the "I don't have that scheme…" fallback list, etc.) now
+comes from `kb_i18n.py` for the same reason.
+
+**b) Intent detection only understood English keywords.** e.g. "पेंच" (catch/loophole),
+"पात्रता" (eligibility), "दस्तावेज़" (documents) weren't recognised, so a Hindi/Bengali/
+Tamil question about a *specific part* of a scheme (eligibility, documents, hidden
+conditions, dates…) fell back to a generic summary instead of answering what was asked.
+Added Hindi/Bengali/Tamil keyword variants for every intent.
+
+**c) Tamil scheme matching.** Tamil attaches grammatical endings straight onto a word
+(e.g. "ஓய்வூதியம்" → "ஓய்வூதியத்தில்" for "in the pension"), so the old exact-substring
+alias check missed these. Added a suffix-tolerant fallback match.
+
+**d) Data quality: 8 of the 18 Tamil scheme titles were corrupted** — they had Hindi/
+Bengali/Malayalam words accidentally mixed into the Tamil text (e.g. PM Jan Dhan Yojana's
+Tamil title contained Malayalam "ജന" and Bengali "ধন" instead of Tamil script). This
+broke both the on-screen scheme names and the native-script matching index. Corrected
+all 8 titles in `data/translations/*__ta.json`.
+
+**Net effect:** ask a real scheme question in Hindi, Bengali or Tamil now (a) matches the
+right scheme even with grammatical suffixes, (b) answers the specific thing you asked
+(eligibility / documents / how to apply / benefits / dates / hidden conditions), and
+(c) is 100% grounded in the same official scheme data as the English answer — never
+hallucinated, and never silently reverts to English or to the generic "ask me about one
+of these 18 schemes" message when a real match exists.
+
+## 2. Login button colour
+Changed from amber/orange to a solid **blue** (`bg-blue-600`, with a blue ring/shadow so
+it doesn't blend into the header), per your request, in both `Navbar.tsx` and the
+sign-in-required screen in `AuthGate.tsx`.
+
+### Files changed in this round
+Backend: `services/kb_service.py`, `services/kb_i18n.py`, `services/ai_service.py`,
+`data/translations/{icar-national-talent,jan-dhan,jeevan-jyoti-bima,kaushal-vikas,
+pg-indira-gandhi-sgc,suraksha-bima,ugc-jrf-engineering,viksit-bharat-rozgar}__ta.json`
+Frontend: `components/Navbar.tsx`, `components/AuthGate.tsx`
+(plus everything from Round 1, which is now included since this is the real repo)
+
+## Known remaining limitation
+Some Tamil translation **body text** (benefits/eligibility paragraphs, not titles) still
+has occasional stray words in the wrong script here and there — the titles (the highest-
+visibility text) are fixed, but a full sentence-by-sentence re-translation pass of all 18
+schemes × Tamil was outside this round's scope. Hindi and Bengali content was checked and
+is clean.

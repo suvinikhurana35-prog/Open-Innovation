@@ -10,7 +10,7 @@ import { useAuth } from '@/lib/contexts/AuthContext'
 import { ProfileDrawer } from '@/components/profile/ProfileDrawer'
 import {
   Menu, X, Sun, Moon, Globe, ChevronDown, Home,
-  FileText, GitCompare, BarChart3, MessageCircle, Shield, User,
+  FileText, GitCompare, BarChart3, MessageCircle, Shield, User, LogIn, LogOut,
 } from 'lucide-react'
 
 const NAV_ITEMS = [
@@ -48,7 +48,7 @@ export function Navbar() {
   const [showLang, setShowLang] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const { lang, setLang, t } = useI18n()
-  const { user, isAuthenticated } = useAuth()
+  const { user, isAuthenticated, logout } = useAuth()
   const currentLang = LANGUAGES.find(l => l.code === lang) || LANGUAGES[0]
   const pathname = usePathname()
 
@@ -159,6 +159,28 @@ export function Navbar() {
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
               </button>
+
+              {/* Login / Logout — bold blue, deliberately clashes with the
+                  app's green/amber palette so it's impossible to miss */}
+              {isAuthenticated ? (
+                <button
+                  onClick={logout}
+                  className="inline-flex items-center gap-1.5 rounded-lg border-2 border-blue-600 px-3 py-1.5 text-sm font-semibold text-blue-700 transition hover:bg-blue-50 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-500/10"
+                  aria-label="Log out"
+                >
+                  <LogOut className="w-4 h-4" />
+                  <span className="hidden sm:inline">{user?.fullName?.split(' ')[0] || t('nav_logout')}</span>
+                </button>
+              ) : (
+                <Link
+                  href="/login"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2 text-sm font-bold text-white shadow-lg shadow-blue-600/30 ring-2 ring-blue-300 transition hover:bg-blue-700 hover:shadow-blue-600/50 dark:ring-blue-800"
+                  aria-label="Log in"
+                >
+                  <LogIn className="w-4 h-4" />
+                  <span>{t('nav_login')}</span>
+                </Link>
+              )}
 
               <button
                 onClick={() => setIsOpen(!isOpen)}

@@ -22,6 +22,8 @@ const STRINGS: Record<LangCode, Record<string, string>> = {
     // nav
     nav_home: 'Home', nav_explainer: 'Explainer', nav_compare: 'Compare',
     nav_chat: 'AI Chat', nav_impact: 'Impact', select_language: 'Select language',
+    nav_login: 'Login', nav_logout: 'Logout', nav_register: 'Register', chat_translating: 'Translating conversation…',
+    auth_required_title: 'Please sign in to continue', auth_required_body: 'Log in to use JanNiti\'s scheme explainer, comparison and AI chat.',
     choose_scheme: 'Choose a scheme...', explainer_pick: 'Pick a scheme to see a simple explanation', compare_title: 'Compare Policies', compare_sub: 'Side-by-side comparison of any two government schemes', compare_scheme1: 'Scheme 1', compare_scheme2: 'Scheme 2', compare_btn: 'Compare Schemes', compare_loading: 'Comparing...',
     apply_now: 'Apply Now', apply_sub: 'Opens the official government portal in a new tab',
     // hero
@@ -162,6 +164,8 @@ const STRINGS: Record<LangCode, Record<string, string>> = {
   hi: {
     nav_home: 'होम', nav_explainer: 'जानकारी', nav_compare: 'तुलना',
     nav_chat: 'AI चैट', nav_impact: 'प्रभाव', select_language: 'भाषा चुनें',
+    nav_login: 'लॉगिन', nav_logout: 'लॉगआउट', nav_register: 'रजिस्टर', chat_translating: 'बातचीत का अनुवाद हो रहा है…',
+    auth_required_title: 'जारी रखने के लिए साइन इन करें', auth_required_body: 'JanNiti के स्कीम एक्सप्लेनर, तुलना और AI चैट का उपयोग करने के लिए लॉगिन करें।',
     choose_scheme: 'एक योजना चुनें...', explainer_pick: 'सरल व्याख्या देखने के लिए एक योजना चुनें', compare_title: 'योजनाओं की तुलना', compare_sub: 'किन्हीं दो सरकारी योजनाओं की आमने-सामने तुलना', compare_scheme1: 'योजना 1', compare_scheme2: 'योजना 2', compare_btn: 'योजनाओं की तुलना करें', compare_loading: 'तुलना की जा रही है...',
     apply_now: 'अभी आवेदन करें', apply_sub: 'आधिकारिक सरकारी पोर्टल नई टैब में खुलेगा',
     badge_platform: 'भारत का पहला नीति साक्षरता मंच',
@@ -262,6 +266,8 @@ const STRINGS: Record<LangCode, Record<string, string>> = {
   bn: {
     nav_home: 'হোম', nav_explainer: 'তথ্য', nav_compare: 'তুলনা',
     nav_chat: 'AI চ্যাট', nav_impact: 'প্রভাব', select_language: 'ভাষা নির্বাচন করুন',
+    nav_login: 'লগইন', nav_logout: 'লগআউট', nav_register: 'রেজিস্টার', chat_translating: 'কথোপকথন অনুবাদ হচ্ছে…',
+    auth_required_title: 'চালিয়ে যেতে সাইন ইন করুন', auth_required_body: 'JanNiti-র স্কিম ব্যাখ্যাকারী, তুলনা এবং AI চ্যাট ব্যবহার করতে লগইন করুন।',
     choose_scheme: 'একটি প্রকল্প বেছে নিন...', explainer_pick: 'সহজ ব্যাখ্যা দেখতে একটি প্রকল্প বেছে নিন', compare_title: 'প্রকল্প তুলনা', compare_sub: 'যেকোনো দুটি সরকারি প্রকল্পের পাশাপাশি তুলনা', compare_scheme1: 'প্রকল্প ১', compare_scheme2: 'প্রকল্প ২', compare_btn: 'প্রকল্প তুলনা করুন', compare_loading: 'তুলনা করা হচ্ছে...',
     apply_now: 'এখনই আবেদন করুন', apply_sub: 'অফিসিয়াল সরকারি পোর্টাল নতুন ট্যাবে খুলবে',
     badge_platform: 'ভারতের প্রথম নীতি সাক্ষরতা প্ল্যাটফর্ম',
@@ -362,6 +368,8 @@ const STRINGS: Record<LangCode, Record<string, string>> = {
   ta: {
     nav_home: 'முகப்பு', nav_explainer: 'விளக்கம்', nav_compare: 'ஒப்பீடு',
     nav_chat: 'AI அரட்டை', nav_impact: 'தாக்கம்', select_language: 'மொழியைத் தேர்ந்தெடுக்கவும்',
+    nav_login: 'உள்நுழைவு', nav_logout: 'வெளியேறு', nav_register: 'பதிவு', chat_translating: 'உரையாடல் மொழிபெயர்க்கப்படுகிறது…',
+    auth_required_title: 'தொடர உள்நுழையவும்', auth_required_body: 'JanNiti-யின் திட்ட விளக்கம், ஒப்பீடு மற்றும் AI அரட்டையைப் பயன்படுத்த உள்நுழையவும்.',
     choose_scheme: 'ஒரு திட்டத்தைத் தேர்வுசெய்க...', explainer_pick: 'எளிய விளக்கம் பார்க்க ஒரு திட்டத்தைத் தேர்வுசெய்க', compare_title: 'திட்ட ஒப்பீடு', compare_sub: 'எந்த இரண்டு அரசுத் திட்டங்களின் பக்கவாட்டு ஒப்பீடு', compare_scheme1: 'திட்டம் 1', compare_scheme2: 'திட்டம் 2', compare_btn: 'திட்டங்களை ஒப்பிடு', compare_loading: 'ஒப்பிடப்படுகிறது...',
     apply_now: 'இப்போது விண்ணப்பிக்கவும்', apply_sub: 'அதிகாரப்பூர்வ அரசு போர்டல் புதிய தாவலில் திறக்கும்',
     badge_platform: 'இந்தியாவின் முதல் கொள்கை எழுத்தறிவு தளம்',

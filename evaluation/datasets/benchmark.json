@@ -1,0 +1,2390 @@
+[
+  {
+    "id": "atal-pension-benefits-1",
+    "scheme": "atal-pension",
+    "section": "benefits",
+    "query": "What benefits does Atal Pension Yojana (APY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Guaranteed minimum pension of Rs. 1,000 / 2,000 / 3,000 / 4,000 / 5,000 per month from age 60 until death (subscriber chooses the slab).",
+    "intent": "benefits"
+  },
+  {
+    "id": "atal-pension-benefits-2",
+    "scheme": "atal-pension",
+    "section": "benefits",
+    "query": "How much financial benefit does Atal Pension Yojana (APY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Guaranteed minimum pension of Rs. 1,000 / 2,000 / 3,000 / 4,000 / 5,000 per month from age 60 until death (subscriber chooses the slab).",
+    "intent": "benefits"
+  },
+  {
+    "id": "atal-pension-eligibility-1",
+    "scheme": "atal-pension",
+    "section": "eligibility",
+    "query": "Who is eligible for Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age 18 to 40 years at joining; pension starts at 60.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "atal-pension-eligibility-2",
+    "scheme": "atal-pension",
+    "section": "eligibility",
+    "query": "What is the age requirement for Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age 18 to 40 years at joining; pension starts at 60.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "atal-pension-documents-1",
+    "scheme": "atal-pension",
+    "section": "documents",
+    "query": "What documents are required for Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "KYC details are fetched from your active bank / post office savings account (Aadhaar is the primary KYC for identifying beneficiary, spouse and nominee).",
+    "intent": "documents"
+  },
+  {
+    "id": "atal-pension-application-1",
+    "scheme": "atal-pension",
+    "section": "application",
+    "query": "How do I apply for Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Online (net banking): log in to internet banking, search APY on the dashboard, fill basic and nominee details, consent to auto-debit, submit.\nOnline (eNPS): visit enps.nsdl.com, select \"Atal Pension Y",
+    "intent": "application"
+  },
+  {
+    "id": "atal-pension-dates-1",
+    "scheme": "atal-pension",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "No deadline — enrol any time between ages 18 and 40. Contributions continue till age 60.",
+    "intent": "dates"
+  },
+  {
+    "id": "atal-pension-conditions-1",
+    "scheme": "atal-pension",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Income-tax payers (from 01.10.2022) are barred — if found later, the account can be closed.",
+    "intent": "conditions"
+  },
+  {
+    "id": "atal-pension-conditions-2",
+    "scheme": "atal-pension",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Atal Pension Yojana (APY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Who Should Not Apply",
+    "expected_answer_span": "From 1 October 2022, any citizen who is or has been an income-tax payer cannot join APY.",
+    "intent": "conditions"
+  },
+  {
+    "id": "atal-pension-implicit-1",
+    "scheme": "atal-pension",
+    "section": "implicit",
+    "query": "I want a guaranteed monthly pension after I turn 60.",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Guaranteed minimum pension of Rs. 1,000 / 2,000 / 3,000 / 4,000 / 5,000 per month from age 60 until death (subscriber chooses the slab).",
+    "intent": "implicit"
+  },
+  {
+    "id": "atal-pension-implicit-2",
+    "scheme": "atal-pension",
+    "section": "implicit",
+    "query": "I want a guaranteed monthly pension after I turn 60.",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age 18 to 40 years at joining; pension starts at 60.",
+    "intent": "implicit"
+  },
+  {
+    "id": "cbse-single-girl-child-benefits-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "benefits",
+    "query": "What benefits does CBSE Merit Scholarship Scheme for Single Girl Child (SGC) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 1,000 per month per student for a maximum of 2 years (classes 11 and 12).",
+    "intent": "benefits"
+  },
+  {
+    "id": "cbse-single-girl-child-benefits-2",
+    "scheme": "cbse-single-girl-child",
+    "section": "benefits",
+    "query": "How much financial benefit does CBSE Merit Scholarship Scheme for Single Girl Child (SGC) give?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 1,000 per month per student for a maximum of 2 years (classes 11 and 12).",
+    "intent": "benefits"
+  },
+  {
+    "id": "cbse-single-girl-child-eligibility-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "eligibility",
+    "query": "Who is eligible for CBSE Merit Scholarship Scheme for Single Girl Child (SGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Single girl child of her parents (twins/all girls born together also count as single girl child).",
+    "intent": "eligibility"
+  },
+  {
+    "id": "cbse-single-girl-child-documents-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "documents",
+    "query": "What documents are required for CBSE Merit Scholarship Scheme for Single Girl Child (SGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Passport-size photograph and scanned signature.",
+    "intent": "documents"
+  },
+  {
+    "id": "cbse-single-girl-child-application-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "application",
+    "query": "How do I apply for CBSE Merit Scholarship Scheme for Single Girl Child (SGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. Visit the CBSE scholarship page (cbse.gov.in/cbsenew/scholar.html).\n2. Click \"New User Registration\" (or \"Renewal\").\n3. Read the instructions, continue, enter your class 10 roll number and date of ",
+    "intent": "application"
+  },
+  {
+    "id": "cbse-single-girl-child-dates-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for CBSE Merit Scholarship Scheme for Single Girl Child (SGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Application windows are notified yearly on the CBSE scholarship page — check for the current session's dates.",
+    "intent": "dates"
+  },
+  {
+    "id": "cbse-single-girl-child-conditions-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in CBSE Merit Scholarship Scheme for Single Girl Child (SGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Tuition-fee caps are strict: over Rs. 2,500/month in class 10 or Rs. 3,000/month in 11-12 makes you ineligible.",
+    "intent": "conditions"
+  },
+  {
+    "id": "cbse-single-girl-child-implicit-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "implicit",
+    "query": "I am a student looking for financial help to continue studies.",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 1,000 per month per student for a maximum of 2 years (classes 11 and 12).",
+    "intent": "implicit"
+  },
+  {
+    "id": "cbse-single-girl-child-implicit-2",
+    "scheme": "cbse-single-girl-child",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Single girl child of her parents (twins/all girls born together also count as single girl child).",
+    "intent": "implicit"
+  },
+  {
+    "id": "fasal-bima-benefits-1",
+    "scheme": "fasal-bima",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Fasal Bima Yojana (PMFBY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Affordable premium: farmer pays max 2% for Kharif food & oilseed crops, 1.5% for Rabi food & oilseeds, 5% for annual commercial/horticultural crops — government subsidises the rest.",
+    "intent": "benefits"
+  },
+  {
+    "id": "fasal-bima-benefits-2",
+    "scheme": "fasal-bima",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri Fasal Bima Yojana (PMFBY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Covers natural disasters, pests, diseases; post-harvest losses (up to 14 days, cut-and-spread condition) and localised calamities (hailstorm, landslide, inundation) on an individual farm basis.",
+    "intent": "benefits"
+  },
+  {
+    "id": "fasal-bima-eligibility-1",
+    "scheme": "fasal-bima",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "All farmers, including tenant farmers and sharecroppers, growing notified crops in notified areas.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "fasal-bima-documents-1",
+    "scheme": "fasal-bima",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Passport-size photograph.",
+    "intent": "documents"
+  },
+  {
+    "id": "fasal-bima-application-1",
+    "scheme": "fasal-bima",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. Visit pmfby.gov.in and click \"Farmer Corner\"; choose \"Guest Farmer\" to register (skip if registered).\n2. Fill Farmer Details, Residential Details, Farmer ID and Account Details sections; enter capt",
+    "intent": "application"
+  },
+  {
+    "id": "fasal-bima-dates-1",
+    "scheme": "fasal-bima",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Apply within about 2 weeks of the start of each sowing season (exact cut-off dates are notified per state/season on pmfby.gov.in).",
+    "intent": "dates"
+  },
+  {
+    "id": "fasal-bima-conditions-1",
+    "scheme": "fasal-bima",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Missing the seasonal enrolment cut-off means no cover for that crop season.",
+    "intent": "conditions"
+  },
+  {
+    "id": "fasal-bima-conditions-2",
+    "scheme": "fasal-bima",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Fasal Bima Yojana (PMFBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Who Should Not Apply",
+    "expected_answer_span": "Crop losses in non-notified areas are generally not covered.",
+    "intent": "conditions"
+  },
+  {
+    "id": "fasal-bima-implicit-1",
+    "scheme": "fasal-bima",
+    "section": "implicit",
+    "query": "I am a farmer and need government financial support.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Affordable premium: farmer pays max 2% for Kharif food & oilseed crops, 1.5% for Rabi food & oilseeds, 5% for annual commercial/horticultural crops — government subsidises the rest.",
+    "intent": "implicit"
+  },
+  {
+    "id": "fasal-bima-implicit-2",
+    "scheme": "fasal-bima",
+    "section": "implicit",
+    "query": "I am a farmer and need government financial support.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "All farmers, including tenant farmers and sharecroppers, growing notified crops in notified areas.",
+    "intent": "implicit"
+  },
+  {
+    "id": "garib-kalyan-anna-benefits-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "5 kg free food grain per month per person for ration-card-holding families — over and above the subsidised PDS grain.",
+    "intent": "benefits"
+  },
+  {
+    "id": "garib-kalyan-anna-eligibility-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Families in the Antyodaya Anna Yojana (AAY) and Priority Households (PHH) categories.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "garib-kalyan-anna-documents-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Ration Card.",
+    "intent": "documents"
+  },
+  {
+    "id": "garib-kalyan-anna-application-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Quote your ration card number or Aadhaar number to any Fair Price Shop dealer across the country.",
+    "intent": "application"
+  },
+  {
+    "id": "garib-kalyan-anna-dates-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Distribution is monthly through Fair Price Shops.",
+    "intent": "dates"
+  },
+  {
+    "id": "garib-kalyan-anna-conditions-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Only AAY and PHH ration-card families qualify — a general ration card is not enough.",
+    "intent": "conditions"
+  },
+  {
+    "id": "garib-kalyan-anna-implicit-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "implicit",
+    "query": "I need free or subsidised food grains for my family.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "5 kg free food grain per month per person for ration-card-holding families — over and above the subsidised PDS grain.",
+    "intent": "implicit"
+  },
+  {
+    "id": "garib-kalyan-anna-implicit-2",
+    "scheme": "garib-kalyan-anna",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Families in the Antyodaya Anna Yojana (AAY) and Priority Households (PHH) categories.",
+    "intent": "implicit"
+  },
+  {
+    "id": "icar-national-talent-benefits-1",
+    "scheme": "icar-national-talent",
+    "section": "benefits",
+    "query": "What benefits does National Talent Scholarship (Undergraduate) - ICAR provide?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 3,000 per month during the Bachelor's degree programme.",
+    "intent": "benefits"
+  },
+  {
+    "id": "icar-national-talent-benefits-2",
+    "scheme": "icar-national-talent",
+    "section": "benefits",
+    "query": "How much financial benefit does National Talent Scholarship (Undergraduate) - ICAR give?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 3,000 per month during the Bachelor's degree programme.",
+    "intent": "benefits"
+  },
+  {
+    "id": "icar-national-talent-eligibility-1",
+    "scheme": "icar-national-talent",
+    "section": "eligibility",
+    "query": "Who is eligible for National Talent Scholarship (Undergraduate) - ICAR?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Pursuing a Bachelor's degree in Agriculture or allied disciplines.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "icar-national-talent-documents-1",
+    "scheme": "icar-national-talent",
+    "section": "documents",
+    "query": "What documents are required for National Talent Scholarship (Undergraduate) - ICAR?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Recent passport-size photograph.",
+    "intent": "documents"
+  },
+  {
+    "id": "icar-national-talent-application-1",
+    "scheme": "icar-national-talent",
+    "section": "application",
+    "query": "How do I apply for National Talent Scholarship (Undergraduate) - ICAR?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Application is made online through the National Scholarships Portal process:\n1. New registration on NSP (mobile OTP + eKYC); note the reference number.\n2. Generate OTR ID via the NSP OTR app with Aadh",
+    "intent": "application"
+  },
+  {
+    "id": "icar-national-talent-dates-1",
+    "scheme": "icar-national-talent",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for National Talent Scholarship (Undergraduate) - ICAR?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "NSP notifies opening/closing dates yearly; renewals must be filed before the cut-off.",
+    "intent": "dates"
+  },
+  {
+    "id": "icar-national-talent-conditions-1",
+    "scheme": "icar-national-talent",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in National Talent Scholarship (Undergraduate) - ICAR?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Minimum OGPA/CGPA of 7.00/10 at end of first year (6.50 for SC/ST) — else scholarship stops.",
+    "intent": "conditions"
+  },
+  {
+    "id": "icar-national-talent-implicit-1",
+    "scheme": "icar-national-talent",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 3,000 per month during the Bachelor's degree programme.",
+    "intent": "implicit"
+  },
+  {
+    "id": "icar-national-talent-implicit-2",
+    "scheme": "icar-national-talent",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Pursuing a Bachelor's degree in Agriculture or allied disciplines.",
+    "intent": "implicit"
+  },
+  {
+    "id": "jan-dhan-benefits-1",
+    "scheme": "jan-dhan",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Jan Dhan Yojana (PMJDY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Basic Savings Bank Deposit Account (BSBDA) with NO minimum balance requirement (cash withdrawals limited to four per month).",
+    "intent": "benefits"
+  },
+  {
+    "id": "jan-dhan-benefits-2",
+    "scheme": "jan-dhan",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri Jan Dhan Yojana (PMJDY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Free RuPay debit card with inbuilt accident insurance cover of Rs. 2 lakh (Rs. 1 lakh for accounts opened before 28.08.2018).",
+    "intent": "benefits"
+  },
+  {
+    "id": "jan-dhan-eligibility-1",
+    "scheme": "jan-dhan",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Jan Dhan Yojana (PMJDY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Indian nationals.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "jan-dhan-eligibility-2",
+    "scheme": "jan-dhan",
+    "section": "eligibility",
+    "query": "What is the age requirement for Pradhan Mantri Jan Dhan Yojana (PMJDY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Minors above 10 years can open an account with support of a legal guardian.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "jan-dhan-documents-1",
+    "scheme": "jan-dhan",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Jan Dhan Yojana (PMJDY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Aadhaar.",
+    "intent": "documents"
+  },
+  {
+    "id": "jan-dhan-application-1",
+    "scheme": "jan-dhan",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Jan Dhan Yojana (PMJDY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. Go to the official PMJDY portal (pmjdy.gov.in).\n2. Under \"e-Documents\", download the Account Opening Form (English or Hindi) and print it.\n3. Fill it manually — bank branch, town/village, block/dis",
+    "intent": "application"
+  },
+  {
+    "id": "jan-dhan-dates-1",
+    "scheme": "jan-dhan",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Jan Dhan Yojana (PMJDY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Open-ended — accounts can be opened any time.",
+    "intent": "dates"
+  },
+  {
+    "id": "jan-dhan-conditions-1",
+    "scheme": "jan-dhan",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Jan Dhan Yojana (PMJDY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "A Small Account (opened without documents) expires after 12 months unless you show proof of applying for a valid ID.",
+    "intent": "conditions"
+  },
+  {
+    "id": "jan-dhan-implicit-1",
+    "scheme": "jan-dhan",
+    "section": "implicit",
+    "query": "I want to open a bank account with no minimum balance.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Basic Savings Bank Deposit Account (BSBDA) with NO minimum balance requirement (cash withdrawals limited to four per month).",
+    "intent": "implicit"
+  },
+  {
+    "id": "jan-dhan-implicit-2",
+    "scheme": "jan-dhan",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Indian nationals.",
+    "intent": "implicit"
+  },
+  {
+    "id": "jeevan-jyoti-bima-benefits-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "One-year term life cover of Rs. 2 lakh for subscribers aged 18-50.",
+    "intent": "benefits"
+  },
+  {
+    "id": "jeevan-jyoti-bima-benefits-2",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "One-year term life cover of Rs. 2 lakh for subscribers aged 18-50.",
+    "intent": "benefits"
+  },
+  {
+    "id": "jeevan-jyoti-bima-eligibility-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age between 18 and 50 years.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "jeevan-jyoti-bima-eligibility-2",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "eligibility",
+    "query": "What is the age requirement for Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age between 18 and 50 years.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "jeevan-jyoti-bima-documents-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Duly filled and signed Consent-cum-Declaration / Enrolment form (download: https://www.jansuraksha.gov.in/Files/PMJJBY/English/ApplicationForm.pdf).",
+    "intent": "documents"
+  },
+  {
+    "id": "jeevan-jyoti-bima-application-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Offline:\n1. Download and print the Consent-cum-Declaration form from jansuraksha.gov.in.\n2. Fill and sign it, attach self-attested KYC copies, and submit to the authorised official of your bank / post",
+    "intent": "application"
+  },
+  {
+    "id": "jeevan-jyoti-bima-dates-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Cover period runs 1 June to 31 May every year; premium is auto-debited annually.",
+    "intent": "dates"
+  },
+  {
+    "id": "jeevan-jyoti-bima-conditions-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "A 30-day lien (waiting) period applies from enrolment: natural death in the first 30 days is not covered (accidental death is covered from day one).",
+    "intent": "conditions"
+  },
+  {
+    "id": "jeevan-jyoti-bima-implicit-1",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "implicit",
+    "query": "I need low-cost insurance cover for my family.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "One-year term life cover of Rs. 2 lakh for subscribers aged 18-50.",
+    "intent": "implicit"
+  },
+  {
+    "id": "jeevan-jyoti-bima-implicit-2",
+    "scheme": "jeevan-jyoti-bima",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age between 18 and 50 years.",
+    "intent": "implicit"
+  },
+  {
+    "id": "kaushal-vikas-benefits-1",
+    "scheme": "kaushal-vikas",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Counselling: online platform, helpline and district-level skill information centres.",
+    "intent": "benefits"
+  },
+  {
+    "id": "kaushal-vikas-eligibility-1",
+    "scheme": "kaushal-vikas",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Indian national aged 15-45 years.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "kaushal-vikas-eligibility-2",
+    "scheme": "kaushal-vikas",
+    "section": "eligibility",
+    "query": "What is the age requirement for Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Indian national aged 15-45 years.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "kaushal-vikas-documents-1",
+    "scheme": "kaushal-vikas",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "As required for the chosen job role (Aadhaar is mandatory at enrolment).",
+    "intent": "documents"
+  },
+  {
+    "id": "kaushal-vikas-application-1",
+    "scheme": "kaushal-vikas",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Contact your nearest Training Centre to apply. Find centres at: https://www.pmkvyofficial.org/trainingcenter",
+    "intent": "application"
+  },
+  {
+    "id": "kaushal-vikas-dates-1",
+    "scheme": "kaushal-vikas",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Training batches run through the year at centres; ask your nearest centre for the next batch.",
+    "intent": "dates"
+  },
+  {
+    "id": "kaushal-vikas-conditions-1",
+    "scheme": "kaushal-vikas",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Aadhaar is mandatory at enrolment.",
+    "intent": "conditions"
+  },
+  {
+    "id": "kaushal-vikas-implicit-1",
+    "scheme": "kaushal-vikas",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Counselling: online platform, helpline and district-level skill information centres.",
+    "intent": "implicit"
+  },
+  {
+    "id": "kaushal-vikas-implicit-2",
+    "scheme": "kaushal-vikas",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Indian national aged 15-45 years.",
+    "intent": "implicit"
+  },
+  {
+    "id": "kisan-credit-card-benefits-1",
+    "scheme": "kisan-credit-card",
+    "section": "benefits",
+    "query": "What benefits does Kisan Credit Card (KCC) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Credit at an effectively subsidised rate of ~4% p.a. (2% interest subvention + 3% prompt repayment incentive).",
+    "intent": "benefits"
+  },
+  {
+    "id": "kisan-credit-card-eligibility-1",
+    "scheme": "kisan-credit-card",
+    "section": "eligibility",
+    "query": "Who is eligible for Kisan Credit Card (KCC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Farmers — individual/joint borrowers who are owner cultivators.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "kisan-credit-card-documents-1",
+    "scheme": "kisan-credit-card",
+    "section": "documents",
+    "query": "What documents are required for Kisan Credit Card (KCC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Application form.",
+    "intent": "documents"
+  },
+  {
+    "id": "kisan-credit-card-application-1",
+    "scheme": "kisan-credit-card",
+    "section": "application",
+    "query": "How do I apply for Kisan Credit Card (KCC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. Visit the website of the bank you wish to apply to (or the Jan Samarth portal's KCC page).\n2. Choose Kisan Credit Card from the options and click \"Apply\".\n3. Fill the form with the required details",
+    "intent": "application"
+  },
+  {
+    "id": "kisan-credit-card-dates-1",
+    "scheme": "kisan-credit-card",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Kisan Credit Card (KCC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "No fixed deadline; apply any time through your bank.",
+    "intent": "dates"
+  },
+  {
+    "id": "kisan-credit-card-conditions-1",
+    "scheme": "kisan-credit-card",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Kisan Credit Card (KCC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Interest subvention applies to prompt repayment — delay and you lose the 3% incentive, so the loan becomes costlier.",
+    "intent": "conditions"
+  },
+  {
+    "id": "kisan-credit-card-implicit-1",
+    "scheme": "kisan-credit-card",
+    "section": "implicit",
+    "query": "I need a small loan to start or run my business.",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Credit at an effectively subsidised rate of ~4% p.a. (2% interest subvention + 3% prompt repayment incentive).",
+    "intent": "implicit"
+  },
+  {
+    "id": "kisan-credit-card-implicit-2",
+    "scheme": "kisan-credit-card",
+    "section": "implicit",
+    "query": "I am a farmer and need government financial support.",
+    "language": "en",
+    "expected_schemes": [
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Farmers — individual/joint borrowers who are owner cultivators.",
+    "intent": "implicit"
+  },
+  {
+    "id": "mudra-benefits-1",
+    "scheme": "mudra",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri MUDRA Yojana (PMMY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Shishu: loans up to Rs. 50,000.",
+    "intent": "benefits"
+  },
+  {
+    "id": "mudra-benefits-2",
+    "scheme": "mudra",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri MUDRA Yojana (PMMY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Shishu: loans up to Rs. 50,000.",
+    "intent": "benefits"
+  },
+  {
+    "id": "mudra-eligibility-1",
+    "scheme": "mudra",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri MUDRA Yojana (PMMY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Individuals, proprietary concerns, partnership firms, private/public limited companies and other legal forms.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "mudra-documents-1",
+    "scheme": "mudra",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri MUDRA Yojana (PMMY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Identity proof (self-attested): Voter ID / Driving Licence / PAN / Aadhaar / Passport / Government-issued photo ID.",
+    "intent": "documents"
+  },
+  {
+    "id": "mudra-application-1",
+    "scheme": "mudra",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri MUDRA Yojana (PMMY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. Go to the PM MUDRA site (mudra.org.in) and select the Udyamimitra portal (udyamimitra.in).\n2. Click Mudra loan \"Apply Now\"; choose New entrepreneur / Existing entrepreneur / Self-employed professio",
+    "intent": "application"
+  },
+  {
+    "id": "mudra-dates-1",
+    "scheme": "mudra",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri MUDRA Yojana (PMMY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "No deadline — apply any time.",
+    "intent": "dates"
+  },
+  {
+    "id": "mudra-conditions-1",
+    "scheme": "mudra",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri MUDRA Yojana (PMMY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "There are NO agents or middlemen for MUDRA loans — anyone claiming to be one is a fraud.",
+    "intent": "conditions"
+  },
+  {
+    "id": "mudra-implicit-1",
+    "scheme": "mudra",
+    "section": "implicit",
+    "query": "I need a small loan to start or run my business.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Shishu: loans up to Rs. 50,000.",
+    "intent": "implicit"
+  },
+  {
+    "id": "mudra-implicit-2",
+    "scheme": "mudra",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Individuals, proprietary concerns, partnership firms, private/public limited companies and other legal forms.",
+    "intent": "implicit"
+  },
+  {
+    "id": "national-pg-scholarship-benefits-1",
+    "scheme": "national-pg-scholarship",
+    "section": "benefits",
+    "query": "What benefits does National Scholarship for Post Graduate Studies (NSPG) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 15,000 per month for 10 months a year.",
+    "intent": "benefits"
+  },
+  {
+    "id": "national-pg-scholarship-benefits-2",
+    "scheme": "national-pg-scholarship",
+    "section": "benefits",
+    "query": "How much financial benefit does National Scholarship for Post Graduate Studies (NSPG) give?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 15,000 per month for 10 months a year.",
+    "intent": "benefits"
+  },
+  {
+    "id": "national-pg-scholarship-eligibility-1",
+    "scheme": "national-pg-scholarship",
+    "section": "eligibility",
+    "query": "Who is eligible for National Scholarship for Post Graduate Studies (NSPG)?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Pursuing the FIRST postgraduate degree (those who already completed a PG degree are not eligible).",
+    "intent": "eligibility"
+  },
+  {
+    "id": "national-pg-scholarship-eligibility-2",
+    "scheme": "national-pg-scholarship",
+    "section": "eligibility",
+    "query": "What is the age requirement for National Scholarship for Post Graduate Studies (NSPG)?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Enrolled in the first year of the PG programme.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "national-pg-scholarship-documents-1",
+    "scheme": "national-pg-scholarship",
+    "section": "documents",
+    "query": "What documents are required for National Scholarship for Post Graduate Studies (NSPG)?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Attested copies of mark sheets and certificates from class 9 onwards.",
+    "intent": "documents"
+  },
+  {
+    "id": "national-pg-scholarship-application-1",
+    "scheme": "national-pg-scholarship",
+    "section": "application",
+    "query": "How do I apply for National Scholarship for Post Graduate Studies (NSPG)?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. New registration on the National Scholarships Portal: accept terms, mobile OTP verification, eKYC; note the reference number.\n2. Generate OTR ID via the NSP OTR app + AadhaarFaceRD (eKYC with FaceA",
+    "intent": "application"
+  },
+  {
+    "id": "national-pg-scholarship-dates-1",
+    "scheme": "national-pg-scholarship",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for National Scholarship for Post Graduate Studies (NSPG)?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "NSP announces opening and closing timelines each year. Renewal applications must be submitted before the cut-off — missing it forfeits that year's renewal (you are not permanently debarred).",
+    "intent": "dates"
+  },
+  {
+    "id": "national-pg-scholarship-conditions-1",
+    "scheme": "national-pg-scholarship",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in National Scholarship for Post Graduate Studies (NSPG)?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Second PG degrees are not funded.",
+    "intent": "conditions"
+  },
+  {
+    "id": "national-pg-scholarship-implicit-1",
+    "scheme": "national-pg-scholarship",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 15,000 per month for 10 months a year.",
+    "intent": "implicit"
+  },
+  {
+    "id": "national-pg-scholarship-implicit-2",
+    "scheme": "national-pg-scholarship",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Pursuing the FIRST postgraduate degree (those who already completed a PG degree are not eligible).",
+    "intent": "implicit"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-benefits-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "benefits",
+    "query": "What benefits does Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 36,200 per annum for two years (full PG duration).",
+    "intent": "benefits"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-benefits-2",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "benefits",
+    "query": "How much financial benefit does Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 36,200 per annum for two years (full PG duration).",
+    "intent": "benefits"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-eligibility-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "eligibility",
+    "query": "Who is eligible for Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Citizen of India; the only girl child in the family (girls without brothers; twin/fraternal daughters may also apply).",
+    "intent": "eligibility"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-eligibility-2",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "eligibility",
+    "query": "What is the age requirement for Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age not more than 30 years at the time of first-year PG admission.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-documents-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "documents",
+    "query": "What documents are required for Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Aadhaar card.",
+    "intent": "documents"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-application-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "application",
+    "query": "How do I apply for Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. New registration on the National Scholarships Portal (NSP): accept terms, verify mobile with OTP, complete eKYC; note your reference number.\n2. Generate an OTR (One Time Registration) ID: install A",
+    "intent": "application"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-dates-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Applications invited once a year on NSP; short notifications on the UGC website. Incomplete applications are summarily rejected.",
+    "intent": "dates"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-conditions-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "One brother in the family disqualifies the applicant.",
+    "intent": "conditions"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-conditions-2",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Who Should Not Apply",
+    "expected_answer_span": "Distance-education PG admission is not covered.",
+    "intent": "conditions"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-implicit-1",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "implicit",
+    "query": "I need free or subsidised food grains for my family.",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 36,200 per annum for two years (full PG duration).",
+    "intent": "implicit"
+  },
+  {
+    "id": "pg-indira-gandhi-sgc-implicit-2",
+    "scheme": "pg-indira-gandhi-sgc",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Citizen of India; the only girl child in the family (girls without brothers; twin/fraternal daughters may also apply).",
+    "intent": "implicit"
+  },
+  {
+    "id": "pm-kisan-benefits-1",
+    "scheme": "pm-kisan",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 6,000 per year per eligible family, paid in 3 equal installments of Rs. 2,000 every four months.",
+    "intent": "benefits"
+  },
+  {
+    "id": "pm-kisan-benefits-2",
+    "scheme": "pm-kisan",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 6,000 per year per eligible family, paid in 3 equal installments of Rs. 2,000 every four months.",
+    "intent": "benefits"
+  },
+  {
+    "id": "pm-kisan-eligibility-1",
+    "scheme": "pm-kisan",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "All landholding farmers' families that have cultivable land holding in their names.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "pm-kisan-documents-1",
+    "scheme": "pm-kisan",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Aadhaar Card.",
+    "intent": "documents"
+  },
+  {
+    "id": "pm-kisan-application-1",
+    "scheme": "pm-kisan",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Online (also via CSCs):\n1. Visit the PM-KISAN portal (pmkisan.gov.in).\n2. Click \"New Farmer Registration\".\n3. Enter your Aadhaar number and mobile number.\n4. Enter the OTP to authenticate your Aadhaar",
+    "intent": "application"
+  },
+  {
+    "id": "pm-kisan-dates-1",
+    "scheme": "pm-kisan",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Installments are released every four months (3 per year). No fixed application deadline — registration stays open.",
+    "intent": "dates"
+  },
+  {
+    "id": "pm-kisan-conditions-1",
+    "scheme": "pm-kisan",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Income-tax payers in the family make the whole family ineligible — even if they own farmland.",
+    "intent": "conditions"
+  },
+  {
+    "id": "pm-kisan-conditions-2",
+    "scheme": "pm-kisan",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Who Should Not Apply",
+    "expected_answer_span": "All institutional land holders.",
+    "intent": "conditions"
+  },
+  {
+    "id": "pm-kisan-implicit-1",
+    "scheme": "pm-kisan",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Rs. 6,000 per year per eligible family, paid in 3 equal installments of Rs. 2,000 every four months.",
+    "intent": "implicit"
+  },
+  {
+    "id": "pm-kisan-implicit-2",
+    "scheme": "pm-kisan",
+    "section": "implicit",
+    "query": "I am a farmer and need government financial support.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "All landholding farmers' families that have cultivable land holding in their names.",
+    "intent": "implicit"
+  },
+  {
+    "id": "skill-loan-benefits-1",
+    "scheme": "skill-loan",
+    "section": "benefits",
+    "query": "What benefits does Skill Loan Scheme (Model Skill Loan Scheme) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Loan amount: Rs. 5,000 to Rs. 1,50,000.",
+    "intent": "benefits"
+  },
+  {
+    "id": "skill-loan-benefits-2",
+    "scheme": "skill-loan",
+    "section": "benefits",
+    "query": "How much financial benefit does Skill Loan Scheme (Model Skill Loan Scheme) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Loan amount: Rs. 5,000 to Rs. 1,50,000.",
+    "intent": "benefits"
+  },
+  {
+    "id": "skill-loan-eligibility-1",
+    "scheme": "skill-loan",
+    "section": "eligibility",
+    "query": "Who is eligible for Skill Loan Scheme (Model Skill Loan Scheme)?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Any individual who has secured admission in a course run by ITIs, Polytechnics, schools recognised by Central/State boards, colleges affiliated to recognised universities, or training partners affiliated to NSDC / Sector Skill Councils / State Skill Missions / State Skill Corporations.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "skill-loan-documents-1",
+    "scheme": "skill-loan",
+    "section": "documents",
+    "query": "What documents are required for Skill Loan Scheme (Model Skill Loan Scheme)?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Proof of identity.",
+    "intent": "documents"
+  },
+  {
+    "id": "skill-loan-application-1",
+    "scheme": "skill-loan",
+    "section": "application",
+    "query": "How do I apply for Skill Loan Scheme (Model Skill Loan Scheme)?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "1. Register on the Vidya Kaushal portal (or apply via the Jan Samarth portal / your bank).\n2. Select your preferred sector / role / centre after registration.\n3. Visit the chosen centre for counsellin",
+    "intent": "application"
+  },
+  {
+    "id": "skill-loan-dates-1",
+    "scheme": "skill-loan",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Skill Loan Scheme (Model Skill Loan Scheme)?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "No deadline; apply after securing admission to a recognised course.",
+    "intent": "dates"
+  },
+  {
+    "id": "skill-loan-conditions-1",
+    "scheme": "skill-loan",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Skill Loan Scheme (Model Skill Loan Scheme)?",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "The bank pays the institute directly — you don't receive the fee money in hand.",
+    "intent": "conditions"
+  },
+  {
+    "id": "skill-loan-implicit-1",
+    "scheme": "skill-loan",
+    "section": "implicit",
+    "query": "I need a small loan to start or run my business.",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Loan amount: Rs. 5,000 to Rs. 1,50,000.",
+    "intent": "implicit"
+  },
+  {
+    "id": "skill-loan-implicit-2",
+    "scheme": "skill-loan",
+    "section": "implicit",
+    "query": "I need free or subsidised food grains for my family.",
+    "language": "en",
+    "expected_schemes": [
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Any individual who has secured admission in a course run by ITIs, Polytechnics, schools recognised by Central/State boards, colleges affiliated to recognised universities, or training partners affiliated to NSDC / Sector Skill Councils / State Skill Missions / State Skill Corporations.",
+    "intent": "implicit"
+  },
+  {
+    "id": "stand-up-india-benefits-1",
+    "scheme": "stand-up-india",
+    "section": "benefits",
+    "query": "What benefits does Stand-Up India provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Composite loan (term loan + working capital) between Rs. 10 lakh and Rs. 100 lakh.",
+    "intent": "benefits"
+  },
+  {
+    "id": "stand-up-india-benefits-2",
+    "scheme": "stand-up-india",
+    "section": "benefits",
+    "query": "How much financial benefit does Stand-Up India give?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Composite loan (term loan + working capital) between Rs. 10 lakh and Rs. 100 lakh.",
+    "intent": "benefits"
+  },
+  {
+    "id": "stand-up-india-eligibility-1",
+    "scheme": "stand-up-india",
+    "section": "eligibility",
+    "query": "Who is eligible for Stand-Up India?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Finance is for greenfield (first-time) enterprises only.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "stand-up-india-eligibility-2",
+    "scheme": "stand-up-india",
+    "section": "eligibility",
+    "query": "What is the age requirement for Stand-Up India?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Minimum age 18 years.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "stand-up-india-documents-1",
+    "scheme": "stand-up-india",
+    "section": "documents",
+    "query": "What documents are required for Stand-Up India?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Identity proof: Voter ID / Passport / Driving Licence / PAN / banker's signature identification (proprietor, partner or director).",
+    "intent": "documents"
+  },
+  {
+    "id": "stand-up-india-application-1",
+    "scheme": "stand-up-india",
+    "section": "application",
+    "query": "How do I apply for Stand-Up India?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Approach your nearest bank branch, or",
+    "intent": "application"
+  },
+  {
+    "id": "stand-up-india-dates-1",
+    "scheme": "stand-up-india",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Stand-Up India?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "No deadline — apply any time.",
+    "intent": "dates"
+  },
+  {
+    "id": "stand-up-india-conditions-1",
+    "scheme": "stand-up-india",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Stand-Up India?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Only GREENFIELD ventures qualify — expanding an existing business does not.",
+    "intent": "conditions"
+  },
+  {
+    "id": "stand-up-india-implicit-1",
+    "scheme": "stand-up-india",
+    "section": "implicit",
+    "query": "I need a small loan to start or run my business.",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Composite loan (term loan + working capital) between Rs. 10 lakh and Rs. 100 lakh.",
+    "intent": "implicit"
+  },
+  {
+    "id": "stand-up-india-implicit-2",
+    "scheme": "stand-up-india",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Stand-Up India"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Finance is for greenfield (first-time) enterprises only.",
+    "intent": "implicit"
+  },
+  {
+    "id": "suraksha-bima-benefits-1",
+    "scheme": "suraksha-bima",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Suraksha Bima Yojana (PMSBY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Death due to accident: nominee gets Rs. 2 lakh.",
+    "intent": "benefits"
+  },
+  {
+    "id": "suraksha-bima-benefits-2",
+    "scheme": "suraksha-bima",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri Suraksha Bima Yojana (PMSBY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Death due to accident: nominee gets Rs. 2 lakh.",
+    "intent": "benefits"
+  },
+  {
+    "id": "suraksha-bima-eligibility-1",
+    "scheme": "suraksha-bima",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Suraksha Bima Yojana (PMSBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Individual bank account holders of participating banks aged 18 (completed) to 70 (age nearer birthday) who consent to auto-debit.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "suraksha-bima-eligibility-2",
+    "scheme": "suraksha-bima",
+    "section": "eligibility",
+    "query": "What is the age requirement for Pradhan Mantri Suraksha Bima Yojana (PMSBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Individual bank account holders of participating banks aged 18 (completed) to 70 (age nearer birthday) who consent to auto-debit.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "suraksha-bima-documents-1",
+    "scheme": "suraksha-bima",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Suraksha Bima Yojana (PMSBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Duly filled PMSBY application/consent form (download: https://jansuraksha.gov.in/Forms-PMSBY.aspx).",
+    "intent": "documents"
+  },
+  {
+    "id": "suraksha-bima-application-1",
+    "scheme": "suraksha-bima",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Suraksha Bima Yojana (PMSBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Offline:\n1. Visit the bank branch where you hold a savings account, or download the form from jansuraksha.gov.in/Forms-PMSBY.aspx.\n2. Fill the form and submit it with the required documents to the ban",
+    "intent": "application"
+  },
+  {
+    "id": "suraksha-bima-dates-1",
+    "scheme": "suraksha-bima",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Suraksha Bima Yojana (PMSBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Cover period 1 June to 31 May; premium auto-debited on/before 1 June every year.",
+    "intent": "dates"
+  },
+  {
+    "id": "suraksha-bima-conditions-1",
+    "scheme": "suraksha-bima",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Suraksha Bima Yojana (PMSBY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Cover terminates at age 70 or on account closure / insufficient balance for auto-debit.",
+    "intent": "conditions"
+  },
+  {
+    "id": "suraksha-bima-implicit-1",
+    "scheme": "suraksha-bima",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "Death due to accident: nominee gets Rs. 2 lakh.",
+    "intent": "implicit"
+  },
+  {
+    "id": "suraksha-bima-implicit-2",
+    "scheme": "suraksha-bima",
+    "section": "implicit",
+    "query": "I want to open a bank account with no minimum balance.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Individual bank account holders of participating banks aged 18 (completed) to 70 (age nearer birthday) who consent to auto-debit.",
+    "intent": "implicit"
+  },
+  {
+    "id": "ugc-jrf-engineering-benefits-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "benefits",
+    "query": "What benefits does Junior Research Fellowship in Engineering & Technology (UGC) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "JRF tenure initially 2 years; on satisfactory evaluation, extended 3 more years as SRF with enhanced emoluments (total 5 years, non-extendable). Unsatisfactory work gets 1 improvement year as JRF, then re-evaluation.",
+    "intent": "benefits"
+  },
+  {
+    "id": "ugc-jrf-engineering-benefits-2",
+    "scheme": "ugc-jrf-engineering",
+    "section": "benefits",
+    "query": "How much financial benefit does Junior Research Fellowship in Engineering & Technology (UGC) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "JRF tenure initially 2 years; on satisfactory evaluation, extended 3 more years as SRF with enhanced emoluments (total 5 years, non-extendable). Unsatisfactory work gets 1 improvement year as JRF, then re-evaluation.",
+    "intent": "benefits"
+  },
+  {
+    "id": "ugc-jrf-engineering-eligibility-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "eligibility",
+    "query": "Who is eligible for Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Master's degree in engineering/technology/pharmacy with 55% marks (M.E./M.Tech. degree required).",
+    "intent": "eligibility"
+  },
+  {
+    "id": "ugc-jrf-engineering-eligibility-2",
+    "scheme": "ugc-jrf-engineering",
+    "section": "eligibility",
+    "query": "What is the age requirement for Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Age limit 40 years as on 1 July of the award year; +5 years relaxation for women and SC/ST.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "ugc-jrf-engineering-documents-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "documents",
+    "query": "What documents are required for Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Duly filled application form.",
+    "intent": "documents"
+  },
+  {
+    "id": "ugc-jrf-engineering-application-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "application",
+    "query": "How do I apply for Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Applications are invited once a year in the prescribed format (Annexure II) through advertisements in leading newspapers and the AIU Newsletter.",
+    "intent": "application"
+  },
+  {
+    "id": "ugc-jrf-engineering-dates-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Watch UGC advertisements (newspapers / AIU Newsletter) once a year for the application window.",
+    "intent": "dates"
+  },
+  {
+    "id": "ugc-jrf-engineering-conditions-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "Fellowship can be cancelled for misconduct, poor progress or exam failure.",
+    "intent": "conditions"
+  },
+  {
+    "id": "ugc-jrf-engineering-conditions-2",
+    "scheme": "ugc-jrf-engineering",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Junior Research Fellowship in Engineering & Technology (UGC)?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Who Should Not Apply",
+    "expected_answer_span": "Misconduct; unsatisfactory research progress; failure in any Ph.D.-related examination; candidate found ineligible later.",
+    "intent": "conditions"
+  },
+  {
+    "id": "ugc-jrf-engineering-implicit-1",
+    "scheme": "ugc-jrf-engineering",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "JRF tenure initially 2 years; on satisfactory evaluation, extended 3 more years as SRF with enhanced emoluments (total 5 years, non-extendable). Unsatisfactory work gets 1 improvement year as JRF, then re-evaluation.",
+    "intent": "implicit"
+  },
+  {
+    "id": "ugc-jrf-engineering-implicit-2",
+    "scheme": "ugc-jrf-engineering",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Master's degree in engineering/technology/pharmacy with 55% marks (M.E./M.Tech. degree required).",
+    "intent": "implicit"
+  },
+  {
+    "id": "viksit-bharat-rozgar-benefits-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "benefits",
+    "query": "What benefits does Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY) provide?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "One-time incentive up to Rs. 15,000 to first-time employees.",
+    "intent": "benefits"
+  },
+  {
+    "id": "viksit-bharat-rozgar-benefits-2",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "benefits",
+    "query": "How much financial benefit does Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY) give?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "One-time incentive up to Rs. 15,000 to first-time employees.",
+    "intent": "benefits"
+  },
+  {
+    "id": "viksit-bharat-rozgar-eligibility-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "eligibility",
+    "query": "Who is eligible for Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Not previously a contributing EPFO / Exempted Trust member before scheme commencement.",
+    "intent": "eligibility"
+  },
+  {
+    "id": "viksit-bharat-rozgar-documents-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "documents",
+    "query": "What documents are required for Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Required Documents",
+    "expected_answer_span": "Unique PAN details of the establishment.",
+    "intent": "documents"
+  },
+  {
+    "id": "viksit-bharat-rozgar-application-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "application",
+    "query": "How do I apply for Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Application Process",
+    "expected_answer_span": "Establishments: access the EPFO portal, complete deemed registration, and update PAN, GSTN and PAN-linked bank account for DBT.\nEmployees: download the UMANG app, generate/activate UAN, and complete A",
+    "intent": "application"
+  },
+  {
+    "id": "viksit-bharat-rozgar-dates-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "dates",
+    "query": "What are the important dates or deadlines for Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Application Deadline",
+    "expected_answer_span": "Registration period: 01.08.2025 to 31.07.2027.",
+    "intent": "dates"
+  },
+  {
+    "id": "viksit-bharat-rozgar-conditions-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Hidden Conditions",
+    "expected_answer_span": "The 2nd employee installment is paid ONLY after completing the Financial Literacy Course on the EPFO portal.",
+    "intent": "conditions"
+  },
+  {
+    "id": "viksit-bharat-rozgar-conditions-2",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "conditions",
+    "query": "Are there any hidden conditions or exclusions in Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Who Should Not Apply",
+    "expected_answer_span": "Employees who joined before 01.08.2025.",
+    "intent": "conditions"
+  },
+  {
+    "id": "viksit-bharat-rozgar-implicit-1",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Key Benefits",
+    "expected_answer_span": "One-time incentive up to Rs. 15,000 to first-time employees.",
+    "intent": "implicit"
+  },
+  {
+    "id": "viksit-bharat-rozgar-implicit-2",
+    "scheme": "viksit-bharat-rozgar",
+    "section": "implicit",
+    "query": "Which government scheme can help someone in my situation?",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Eligibility Criteria",
+    "expected_answer_span": "Not previously a contributing EPFO / Exempted Trust member before scheme commencement.",
+    "intent": "implicit"
+  },
+  {
+    "id": "atal-pension-comparison-1",
+    "scheme": "atal-pension",
+    "section": "comparison",
+    "query": "Compare Atal Pension Yojana (APY) and Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY).",
+    "language": "en",
+    "expected_schemes": [
+      "Atal Pension Yojana (APY)",
+      "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Atal Pension Yojana (APY) vs Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "intent": "comparison"
+  },
+  {
+    "id": "cbse-single-girl-child-comparison-1",
+    "scheme": "cbse-single-girl-child",
+    "section": "comparison",
+    "query": "Compare CBSE Merit Scholarship Scheme for Single Girl Child (SGC) and Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC).",
+    "language": "en",
+    "expected_schemes": [
+      "CBSE Merit Scholarship Scheme for Single Girl Child (SGC)",
+      "Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "CBSE Merit Scholarship Scheme for Single Girl Child (SGC) vs Post Graduate Indira Gandhi Scholarship for Single Girl Child (PG-IGSSGC)",
+    "intent": "comparison"
+  },
+  {
+    "id": "fasal-bima-comparison-1",
+    "scheme": "fasal-bima",
+    "section": "comparison",
+    "query": "Compare Pradhan Mantri Fasal Bima Yojana (PMFBY) and Kisan Credit Card (KCC).",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+      "Kisan Credit Card (KCC)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Pradhan Mantri Fasal Bima Yojana (PMFBY) vs Kisan Credit Card (KCC)",
+    "intent": "comparison"
+  },
+  {
+    "id": "garib-kalyan-anna-comparison-1",
+    "scheme": "garib-kalyan-anna",
+    "section": "comparison",
+    "query": "Compare Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY) and Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY).",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY)",
+      "Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Pradhan Mantri Garib Kalyan Anna Yojana (PMGKAY) vs Pradhan Mantri Viksit Bharat Rozgar Yojana (PM-VBRY)",
+    "intent": "comparison"
+  },
+  {
+    "id": "icar-national-talent-comparison-1",
+    "scheme": "icar-national-talent",
+    "section": "comparison",
+    "query": "Compare National Talent Scholarship (Undergraduate) - ICAR and National Scholarship for Post Graduate Studies (NSPG).",
+    "language": "en",
+    "expected_schemes": [
+      "National Talent Scholarship (Undergraduate) - ICAR",
+      "National Scholarship for Post Graduate Studies (NSPG)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "National Talent Scholarship (Undergraduate) - ICAR vs National Scholarship for Post Graduate Studies (NSPG)",
+    "intent": "comparison"
+  },
+  {
+    "id": "jan-dhan-comparison-1",
+    "scheme": "jan-dhan",
+    "section": "comparison",
+    "query": "Compare Pradhan Mantri Jan Dhan Yojana (PMJDY) and Pradhan Mantri MUDRA Yojana (PMMY).",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+      "Pradhan Mantri MUDRA Yojana (PMMY)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Pradhan Mantri Jan Dhan Yojana (PMJDY) vs Pradhan Mantri MUDRA Yojana (PMMY)",
+    "intent": "comparison"
+  },
+  {
+    "id": "kaushal-vikas-comparison-1",
+    "scheme": "kaushal-vikas",
+    "section": "comparison",
+    "query": "Compare Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY) and Skill Loan Scheme (Model Skill Loan Scheme).",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY)",
+      "Skill Loan Scheme (Model Skill Loan Scheme)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Pradhan Mantri Kaushal Vikas Yojana - Short Term Training (PMKVY) vs Skill Loan Scheme (Model Skill Loan Scheme)",
+    "intent": "comparison"
+  },
+  {
+    "id": "pm-kisan-comparison-1",
+    "scheme": "pm-kisan",
+    "section": "comparison",
+    "query": "Compare Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) and Stand-Up India.",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "Stand-Up India"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) vs Stand-Up India",
+    "intent": "comparison"
+  },
+  {
+    "id": "suraksha-bima-comparison-1",
+    "scheme": "suraksha-bima",
+    "section": "comparison",
+    "query": "Compare Pradhan Mantri Suraksha Bima Yojana (PMSBY) and Junior Research Fellowship in Engineering & Technology (UGC).",
+    "language": "en",
+    "expected_schemes": [
+      "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+      "Junior Research Fellowship in Engineering & Technology (UGC)"
+    ],
+    "expected_section": "Scheme Comparison Metadata",
+    "expected_answer_span": "Pradhan Mantri Suraksha Bima Yojana (PMSBY) vs Junior Research Fellowship in Engineering & Technology (UGC)",
+    "intent": "comparison"
+  }
+]

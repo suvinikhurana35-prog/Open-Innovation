@@ -158,7 +158,40 @@ _TRANSLATABLE_SCALARS = ("title", "what_is", "why_introduced", "how_to_apply",
 _TRANSLATABLE_ARRAYS = ("benefits", "eligibility", "documents", "misunderstood_clauses")
 
 
-def _translate_strings(strings: List[str], language: str, batch: int = 12):
+def translate_texts(texts: List[str], language: str, batch: int = 10) -> List[str]:
+    """Translate arbitrary UI text (e.g. whole chat messages) into ANY target
+    language, English included. Unlike _translate_strings (which is keyed on an
+    English source and short-circuits for en), this re-renders existing text in
+    the selected language regardless of its current language — used when the
+    user switches languages and wants the previous conversation re-rendered."""
+    if not texts:
+        return []
+    lang_name = _LANG_NAMES.get(language, "English")
+    out = list(texts)
+    for start in range(0, len(texts), batch):
+        chunk = texts[start:start + batch]
+        numbered = "\n".join(f"{j + 1}. {s}" for j, s in enumerate(chunk))
+        prompt = (
+            f"Translate each numbered line below into {lang_name}. Write ONLY in "
+            f"{lang_name}. Keep figures (Rs. 6,000), dates, percentages, URLs and "
+            f"acronyms (PM-KISAN, PMFBY, RuPay, SIDBI) unchanged. Return EXACTLY the "
+            f"same numbering, one item per line as 'N. <translation>', with the same "
+            f"number of lines.\n\n{numbered}"
+        )
+        raw = llm_chat(messages=[
+            {"role": "system", "content": f"You are a precise translator into {lang_name}."},
+            {"role": "user", "content": prompt}])
+        if raw == LLM_UNAVAILABLE or not raw:
+            continue
+        parsed = {}
+        for line in raw.splitlines():
+            m = re.match(r"\s*(\d+)[.)]\s*(.+)", line)
+            if m:
+                parsed[int(m.group(1))] = m.group(2).strip()
+        for j in range(len(chunk)):
+            if (j + 1) in parsed and parsed[j + 1]:
+                out[start + j] = parsed[j + 1]
+    return out
     """Shared translation layer used by BOTH the explainer and the chatbot.
     Returns (list, ok).
 
@@ -589,6 +622,47 @@ def compare_schemes(scheme1: str, scheme2: str, language: str = "en") -> dict:
     }
 
 
+def profile_fit_score(slug: str, profile: dict) -> float:
+    """A principled, deterministic fit score between a citizen profile and a
+    scheme, using the same eligibility signals as the chatbot recommender
+    (occupation/flags -> category, age windows, girl-child, income). Higher is
+    a better fit. Used to rank/choose schemes without an LLM."""
+    profile = profile or {}
+    occ = (profile.get("occupation") or "").lower()
+    age = profile.get("age")
+    gender = (profile.get("gender") or "").lower()
+    income = profile.get("annualIncome")
+    is_farmer = profile.get("isFarmer")
+    is_student = profile.get("isStudent")
+    cat = kb_i18n.SCHEME_CAT.get(slug, "general")
+    score = 0.0
+
+    # occupation / flag -> category alignment
+    if cat == "farmer" and (is_farmer or "farm" in occ):
+        score += 3
+    if cat == "business" and any(w in occ for w in ("self", "business", "shop", "entrepreneur")):
+        score += 3
+    if cat == "youth" and any(w in occ for w in ("unemploy", "job", "fresher", "graduate", "seeker")):
+        score += 3
+    if cat == "student" and (is_student or "student" in occ):
+        score += 3
+    if cat in ("worker", "household") and any(w in occ for w in ("worker", "wage", "labour", "unorganised", "daily")):
+        score += 2
+    if cat == "household" and isinstance(income, (int, float)) and income and income <= 250000:
+        score += 2
+
+    # age windows (age-gated schemes)
+    if slug in _AGE_WINDOWS and isinstance(age, (int, float)) and age:
+        lo, hi = _AGE_WINDOWS[slug]
+        score += 2 if lo <= age <= hi else -3
+
+    # girl-child schemes
+    if slug in _GIRL_CHILD_SCHEMES:
+        score += 2 if gender == "female" else -5
+
+    return score
+
+
 def recommend_for_profile(scheme1: str, scheme2: str, profile: dict, language: str = "en") -> dict:
     """Given two schemes and a citizen's profile, pick which fits better —
     grounded in the KB, deterministic, multilingual, no LLM."""
@@ -599,19 +673,12 @@ def recommend_for_profile(scheme1: str, scheme2: str, profile: dict, language: s
     if s1 is None or s2 is None:
         return {"recommended_scheme": "", "reasoning": ui["cmp_unknown"]}
 
-    f1 = _localized_fields(s1, lang)
-    f2 = _localized_fields(s2, lang)
-    t1 = f1.get("title") or s1.title
-    t2 = f2.get("title") or s2.title
-
-    picked = t1
-    recos = _kb_recommend(profile, lang)  # localized titles most relevant to profile
-    if recos:
-        joined = " ".join(recos)
-        if (t1 in joined) and (t2 not in joined):
-            picked = t1
-        elif (t2 in joined) and (t1 not in joined):
-            picked = t2
+    # choose by principled profile-fit score (tie-break: keep scheme1)
+    sc1 = profile_fit_score(s1.slug, profile)
+    sc2 = profile_fit_score(s2.slug, profile)
+    winner = s2 if sc2 > sc1 else s1
+    f = _localized_fields(winner, lang)
+    picked = f.get("title") or winner.title
     return {"recommended_scheme": picked,
             "reasoning": f"{ui['reco_prefix']} {picked}. {ui['cmp_pick_help']}"}
 
@@ -778,11 +845,19 @@ def chat_with_ai(message: str, conversation_history: Optional[List[dict]] = None
             out_lines = ([note, ""] + lines) if note else lines
             reply = "\n".join(out_lines)
             src_title = title
-        elif is_translated and not note:
-            reply = "\n".join(lines)
+        elif is_translated:
+            # `lines` are already the real, human-reviewed translation for this
+            # scheme+language (from the translation cache) — never re-run them
+            # through the LLM. Only the (English) profile note needs translating.
+            if note:
+                note_t, _ = _translate_strings([note], lang)
+                reply = note_t[0] + "\n\n" + "\n".join(lines)
+            else:
+                reply = "\n".join(lines)
             src_title = title
         else:
-            # translate the (already-English) KB lines + the note together
+            # No cached translation for this scheme+language yet -> best-effort
+            # live LLM translation of the (English) KB lines + the note.
             base = ([note, ""] + lines) if note else list(lines)
             translated, _ = _translate_strings([x for x in base if x != ""], lang)
             # re-insert the blank spacer after the note if present
@@ -804,17 +879,26 @@ def chat_with_ai(message: str, conversation_history: Optional[List[dict]] = None
     # ---- 3) Category question ("which scheme helps farmers?") -------------
     sugg = _kb_suggest(message)
     if sugg:
-        if lang != "en":
-            sugg, _ = _translate_strings(sugg, lang)
-        return {"reply": "\n".join(sugg), "sources": ["JanNiti scheme list"],
+        ui = kb_i18n.ui(lang)
+        # The connector lines ("Here are the schemes that can help:" / "Ask me
+        # about any one by name...") are static -> always render instantly and
+        # correctly from kb_i18n, with zero dependency on a live LLM call. Only
+        # the middle, scheme-specific snippet lines (pulled straight from the
+        # English KB) need best-effort translation when the LLM is reachable.
+        middle = sugg[1:-1]
+        if lang != "en" and middle:
+            middle, _ = _translate_strings(middle, lang)
+        out_lines = [ui["chat_cat_intro"]] + middle + [ui["chat_cat_outro"]]
+        return {"reply": "\n".join(out_lines), "sources": ["JanNiti scheme list"],
                 "confidence": "Medium", "faithfulness": 1.0, "grounded": True}
 
     # ---- 4) Outside the 18 schemes -> honest answer, list what IS covered --
-    names = kb_service.scheme_names()
-    fb = ["I don't have that scheme in JanNiti yet. I can help with these 18 official schemes:"]
-    fb += [f"- {n}" for n in names]
-    fb.append("Ask me about any one of these by name and I'll give you point-by-point details.")
-    if lang != "en":
-        fb, _ = _translate_strings(fb, lang)
+    # Fully static + deterministic: scheme names come from the pre-translated
+    # KB (kb_service.scheme_names) and the intro/outro connector lines come
+    # from kb_i18n, so this NEVER falls back to English just because the live
+    # LLM/translation call is unavailable or slow.
+    names = kb_service.scheme_names(lang)   # already in the selected language
+    ui = kb_i18n.ui(lang)
+    fb = [ui["chat_no_match_intro"]] + [f"- {n}" for n in names] + [ui["chat_no_match_outro"]]
     return {"reply": "\n".join(fb), "sources": ["JanNiti scheme list"],
             "confidence": "Low", "faithfulness": None, "grounded": False}
